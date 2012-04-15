@@ -14,13 +14,6 @@
 
 # Inherit from smba1002 device
 $(call inherit-product, device/malata/smba1002/full_smba1002.mk)
-# Inherit from DEADCREME vendor
-$(call inherit-product-if-exists, vendor/deadcreme/deadcreme.mk)
-
-PRODUCT_PACKAGES += \
-    RootBrowserFree \
-    Superuser \
-    su
 
 PRODUCT_NAME := mdl_smba1002
 PRODUCT_DEVICE := smba1002
